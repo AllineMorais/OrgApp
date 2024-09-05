@@ -1,11 +1,13 @@
-import { Banner1 } from './Componentes/Banner/Banner1.Js';
-import CampoTexto from './Componentes/CampoTexto/Index.Js';
+import { Banner, Banner1 } from './Componentes/Banner/Banner.js';
+import CampoTexto from './Componentes/CampoTexto/Index.js';
+import { Formulario } from './Componentes/Formulario/Formulario.js';
 
 function App() {
   return (
     <div className="App">
-     aqui deveria ter um banner
-     <CampoTexto></CampoTexto>
+      <Banner/>
+      <Formulario/>
+     
     </div>
   );
 }
