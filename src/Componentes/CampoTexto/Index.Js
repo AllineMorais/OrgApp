@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import './CampoTexto.css'
 
 const CampoTexto = (props) => {
 
     const placeholderModificada = `${props.placeholder}...` 
+
+    //let valor = 'Alline'
+
+    //const [valor, setValor] = useState('')
 
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)
@@ -13,7 +18,7 @@ const CampoTexto = (props) => {
             <label>
                 {props.label}
             </label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificada}/>
+            <input  onChange={aoDigitado} value={props.valor} required={props.obrigatorio} placeholder={placeholderModificada}/>
         </div>
     )
 }
