@@ -12,7 +12,11 @@ const Time = (props) => {
             {props.colaboradores.map(colaborador => <Colaborador 
             nome={colaborador.nome} 
             cargo={colaborador.cargo} 
-            imagem={colaborador.imagem}/> )}
+            imagem={colaborador.imagem}
+            key={colaborador.nome}
+            corDeFundo={props.corPrimaria}
+            /> 
+            )}
         </div>
     
     </section>
