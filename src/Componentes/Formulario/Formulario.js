@@ -22,6 +22,11 @@ export const Formulario = (props) => {
                 time
             }
         )
+
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
        // console.log('Form foi submetid => ', nome, cargo, imagem, time)
     }
 
